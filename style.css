@@ -129,13 +129,14 @@
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     height: 100vh;
     background-color: cornsilk;
   }
   
   .welcome-section {
-    font-size: 17px;
+    font-size: 27px;
     font-weight: 200;
     font-style: monospace;
     color: red;
@@ -143,6 +144,12 @@
   
   .debrief-section {
     font-size: 17px;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left:0;
+    right: 0;
+    z-index: 99;
     font-weight:200;
     font-style: monospace;
     color:black;
