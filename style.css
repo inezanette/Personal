@@ -155,7 +155,46 @@
     color:black;
     background: cornsilk;
   }
-  
+
+  /* Journal Section */
+  .goals-section{
+    font-size: 17px;
+    text-align: center;
+    bottom: 10px;
+    left:0;
+    right: 0;
+    font-weight:200;
+    font-style: monospace;
+    color:black;
+    background: cornsilk;
+  }
+
+  /* Book Summaries Section */
+  .summaries-section{
+      font-size: 17px;
+      text-align: center;
+      bottom: 10px;
+      left:0;
+      right: 0;
+      font-weight:200;
+      font-style: monospace;
+      color:black;
+      background: cornsilk;
+    }
+
+    /* Free Downloads Section */
+    .free-section{
+      font-size: 17px;
+      text-align: center;
+      bottom: 10px;
+      left:0;
+      right: 0;
+      font-weight:200;
+      font-style: monospace;
+      color:black;
+      background: cornsilk;
+    }
+
   /* Projects section */
   
   .projects-section {
@@ -249,6 +288,96 @@
     transition: transform 0.3s ease-out;
   }
   
+/* Certs section */
+.certs-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: cornsilk;
+}
+
+.certs-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .certs-section-header {
+    font-size: 4rem;
+  }
+}
+
+.certs-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .certs-section {
+    padding: 6rem 1rem;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.certs {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.certs:hover .code {
+  color: #ff7f50;
+}
+
+.certs-image {
+  display:block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.certs-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
   /* Contact section */
   
   .contact-section {
@@ -265,6 +394,7 @@
   
   .contact-section-header > h2 {
     font-size: 6rem;
+    
   }
   
   @media (max-width: 28.75em) {
